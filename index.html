@@ -20,6 +20,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -29,19 +30,19 @@
         <![endif]-->
 
         <main class="container">
-            <article class="form">
+            <article class="">
                 <h1 class="form__header">Find out Required Volume of CTA505:</h1>
                 <section class="row">
-                    <input class="col-sm-4 form__input" type="number" />
-                    <select class="col-sm-4 form__select">
-                        <option id="meters">
-                            M<sup>2</sup>
+                    <input class=" form__input col-sm-4" type="number" />
+                    <select class=" form__select col-sm-4">
+                        <option value="meters" id="meters">
+                            Square Meters
                         </option>
-                        <option id="feet">
-                            Ft<sup>2</sup>
+                        <option value="feet" id="feet">
+                            Square Feet
                         </option>
                     </select>
-                    <button type="button" class="col-sm-4 form__submit">Calculate</button>
+                    <button type="button" onclick="btnHandler();" class="form__submit btn btn-primary col-sm-4">Calculate</button>
                 </section>
                 <section class="row">
                     <h4>You will need: <span class="results"></span> L</h4>
@@ -56,7 +57,6 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
-        <script src="js/main.js"></script>
 
     </body>
 </html>
